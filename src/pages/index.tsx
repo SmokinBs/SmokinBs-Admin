@@ -1,11 +1,13 @@
-import React, { useEffect } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
-export default function Index() {
-  const router = useRouter();
-  useEffect(() => {
-    router.push('/extra-components/accordion');
-  }),
-    [];
-  return <div />;
-}
+const Home = () => {
+    const router = useRouter();
+
+    useEffect(() => {
+        router.push("/dashboard");
+    });
+
+    return null;
+};
+export default Home;

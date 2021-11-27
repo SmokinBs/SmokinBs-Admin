@@ -1,0 +1,31 @@
+.listButton {
+    margin-left: auto;
+}
+
+.mT1 {
+    margin-top: 1rem;
+}
+.mB1 {
+    margin-bottom: 1rem;
+}
+.mL1 {
+    margin-left: 1rem;
+}
+.mR1 {
+    margin-right: 1rem;
+}
+.mT5 {
+    margin-top: 5rem;
+}
+
+.textLarge {
+    font-size: medium !important;
+}
+
+.food-button {
+    margin-right: 1rem;
+}
+
+.food-select {
+    margin-top: 1rem;
+}
