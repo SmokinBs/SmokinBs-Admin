@@ -88,7 +88,7 @@ const EditFoodItem = ({ item }: any) => {
     };
 
     return (
-        <Layout title={`Editing ${name}`}>
+        <Layout title={`Editing ${item.name}`}>
             <Toastr ref={toastrRef} />
             <h1>Editing {item.name}</h1>
             <form onSubmit={SubmitForm} id="updateFood">
