@@ -22,7 +22,7 @@ const Food = (props: { foods: any }) => {
         const deleteItem = async (itemId: string, name: string) => {
             console.log(itemId);
             if (confirm("Are you sure you want to delete this? !! THIS IS IRREVERSIBLE !!")) {
-                await fetch(`/api/database/deleteFood`, {
+                await fetch(`/api/database/food/delete`, {
                     method: "POST",
                     body: JSON.stringify({
                         id,
@@ -77,7 +77,7 @@ const Food = (props: { foods: any }) => {
                 appearance="hero"
                 className="mB1"
                 onClick={() => {
-                    window.location.href = "/dashboard/food/create";
+                    location.href = "/dashboard/food/create";
                 }}
             >
                 <Popover trigger="hint" placement="top" overlay="Create Item">
