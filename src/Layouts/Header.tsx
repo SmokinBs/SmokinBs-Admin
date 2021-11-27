@@ -48,7 +48,7 @@ interface HeaderProps {
     dir: "ltr";
 }
 
-const Header: React.FC<HeaderProps> = (props, { session }) => {
+const Header: React.FC<HeaderProps> = (props) => {
     const router = useRouter();
     const { user } = useUser();
 
