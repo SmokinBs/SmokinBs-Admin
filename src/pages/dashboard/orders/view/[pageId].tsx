@@ -8,7 +8,11 @@ export const getServerSideProps = withPageAuthRequired({
     async getServerSideProps(ctx) {
         const orderId = ctx.req.url?.replace("?", "")?.split("/")[4];
 
-        const data = await (await fetch(`https://admin.smokinbsbbqtest.tk/api/findOrder?orderId=${orderId}`)).json();
+        const data = await(
+            await fetch(
+                `${process.env.API_URL}/v0/orders/find-one?id=${orderId}&authId=${process.env.API_CREDENTIALS}`
+            )
+        ).json();
 
         return {
             props: {

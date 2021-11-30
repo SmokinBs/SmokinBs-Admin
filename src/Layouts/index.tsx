@@ -84,11 +84,9 @@ const LayoutPage: React.FC<SEOProps> = ({ children, ...rest }) => {
                                                 status="Primary"
                                                 onClick={async () => {
                                                     const data: any = await (
-                                                        await fetch("/api/openCloseBusiness")
+                                                        await fetch("/api/businessStatus")
                                                     ).json();
-                                                    console.log(data.isServerOpen);
-
-                                                    setServerOpen(data.isServerOpen);
+                                                    setServerOpen(data.isBusinessOpen);
                                                 }}
                                                 fullWidth
                                             >

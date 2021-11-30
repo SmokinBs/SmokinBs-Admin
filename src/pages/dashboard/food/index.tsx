@@ -6,13 +6,22 @@ import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 export const getServerSideProps = withPageAuthRequired({
     returnTo: "/dashboard/food",
     async getServerSideProps() {
-        const data = await (await fetch("https://admin.smokinbsbbqtest.tk/api/findAllFood")).json();
+		console.log(process.env.API_CREDENTIALS)
+        const data = await(
+            await fetch(`${process.env.API_URL}/v0/foods/find-all?authId=${process.env.API_CREDENTIALS}`)
+        ).json();
 
-        return {
-            props: {
-                foods: data.foods,
-            },
-        };
+		if (data.success) {
+			return {
+				props: {
+					foods: data.foods,
+				},
+			};
+		} else {
+			return{
+				notFound: true,
+			}
+		}
     },
 });
 

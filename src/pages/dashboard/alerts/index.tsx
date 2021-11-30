@@ -6,7 +6,9 @@ import { withPageAuthRequired } from "@auth0/nextjs-auth0";
 export const getServerSideProps = withPageAuthRequired({
     returnTo: "/dashboard/alerts",
     async getServerSideProps() {
-        const data = await (await fetch("https://admin.smokinbsbbqtest.tk/api/findAllAlerts")).json();
+        const data = await(
+            await fetch(`${process.env.API_URL}/v0/alerts/find-all?authId=${process.env.API_CREDENTIALS?.toString()}`)
+        ).json();
         console.log(data);
 
         return {

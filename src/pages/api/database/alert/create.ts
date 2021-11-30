@@ -6,7 +6,7 @@ export default withApiAuthRequired(async (req: NextApiRequest, res: NextApiRespo
 
     const data = await (
         await fetch(
-            `https://admin.smokinbsbbqtest.tk/api/createAlert?name=${body.name}&content=${body.content}&expires=${body.expires}`,
+            `${process.env.API_URL}/v0/alerts/create?authId=${process.env.API_CREDENTIALS}&name=${body.name}&content=${body.content}&expires=${body.expires}`,
         )
     ).json();
 

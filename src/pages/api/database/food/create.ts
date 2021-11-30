@@ -5,7 +5,9 @@ export default withApiAuthRequired(async (req: NextApiRequest, res: NextApiRespo
     const body = JSON.parse(req.body);
 
     fetch(
-        `https://admin.smokinbsbbqtest.tk/api/createFood?name=${body.name}&price=${body.price}&category=${
+        `${process.env.API_URL}/v0/foods/create?authId=${process.env.API_CREDENTIALS}&name=${
+            body.name
+        }&price=${body.price}&category=${
             !(body.category === "" || body.category === "No Category") ? body.category : "No-Category"
         }&description=${body.description}`,
     )
