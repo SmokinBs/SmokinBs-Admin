@@ -66,7 +66,7 @@ const View = ({ order }: any) => {
                     Name - <strong>{order.customer.name}</strong>
                 </p>
                 <p>
-                    Phone Number -
+                    Phone Number - 
                     <strong>
                         {order.personalDetails?.phoneNumber ? order.personalDetails.phoneNumber : "No Number Saved"}
                     </strong>
@@ -75,7 +75,7 @@ const View = ({ order }: any) => {
                     Address - <strong>{order.customer.shipping.address.line1}</strong>
                 </p>
                 <p>
-                    Deliver By -
+                    Deliver By - 
                     <strong>
                         {order.personalDetails?.timeToDeliver ? order.personalDetails.timeToDeliver : "No Time Saved"}
                     </strong>
@@ -84,7 +84,7 @@ const View = ({ order }: any) => {
                 <br />
 
                 <p>
-                    Additional Comments -
+                    Additional Comments - 
                     <strong>
                         {order.personalDetails?.additionalComments ? order.personalDetails.additionalComments : "None"}
                     </strong>
@@ -93,10 +93,10 @@ const View = ({ order }: any) => {
                 <br />
 
                 <p>
-                    Email - <strong>{order.customer.email}</strong>
+                    Email - <strong>{order.customer?.email}</strong>
                 </p>
                 <p>
-                    Invoice - <strong>{order.customer.invoice_prefix}</strong>
+                    Invoice - <strong>{order.customer?.invoice_prefix}</strong>
                 </p>
                 <p>
                     Ordered on - <strong>{new Date(order.orderDate).toLocaleDateString()}</strong>
@@ -107,21 +107,22 @@ const View = ({ order }: any) => {
                     <br />
 
                     <h4>Menu Item / Quantity</h4>
-                    <>
-                        {order.orderContents.forEach((orderItem: any) => (
-                            <>
-                                <br />
-                                {orderItem.phoneNumber ? order.phoneNumber : null}
-                                {orderItem.name.replace("-", " ")} / {orderItem.count}
-                                <br />
-                                <br />
-                                Quantity - {orderItem.count}
-                                <br />
-                                Price - ${orderItem.total}
-                                <hr />
+                        {order.orderContents.map((orderItem: any) => (
+							<>
+								{orderItem.name ? (
+									<p>
+										<br />
+										{orderItem.name?.replace("-", " ")} / {orderItem.count}
+										<br />
+										<br />
+										Quantity - {orderItem?.count}
+										<br />
+										Price - ${orderItem?.total}
+										<hr />
+									</p>
+								) : null}
                             </>
                         ))}
-                    </>
                 </p>
                 <form id="finishedOrder" onSubmit={submitOrder}>
                     <Checkbox
