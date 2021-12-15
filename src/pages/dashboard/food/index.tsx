@@ -8,7 +8,7 @@ export const getServerSideProps = withPageAuthRequired({
     async getServerSideProps() {
 		console.log(process.env.API_CREDENTIALS)
         const data = await(
-            await fetch(`${process.env.API_URL}/v0/foods/find-all?authId=${process.env.API_CREDENTIALS}`)
+            await fetch(`${process.env.API_URL}/v0/foods/find-all`, { headers: { "Authorization": process.env.API_CREDENTIALS! }})
         ).json();
 
 		if (data.success) {
