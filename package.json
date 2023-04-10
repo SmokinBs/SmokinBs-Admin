@@ -30,6 +30,9 @@
 		"sass": "^1.60.0",
 		"simplebar-react": "^2.3.0"
 	},
+	"engines": {
+  "node": "16.x"
+},
 	"scripts": {
 		"dev": "next dev",
 		"start": "next start",
