@@ -1,0 +1,61 @@
+{
+	"name": "@smokinbs/admin",
+	"description": "admin",
+	"author": "XiBakon",
+	"repository": {
+		"type": "git"
+	},
+	"version": "0.0.1",
+	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^6.4.0",
+		"@fortawesome/free-brands-svg-icons": "^6.4.0",
+		"@fortawesome/free-regular-svg-icons": "^6.4.0",
+		"@fortawesome/free-solid-svg-icons": "^6.4.0",
+		"@fortawesome/react-fontawesome": "^0.2.0",
+		"@testing-library/jest-dom": "^4.2.4",
+		"@testing-library/react": "^9.3.2",
+		"@testing-library/user-event": "^7.1.2",
+		"@themesberg/react-bootstrap": "^1.4.1",
+		"bootstrap": "5.0.0-beta1",
+		"http-proxy-middleware": "^2.0.6",
+		"moment-timezone": "^0.5.31",
+		"next": "^13.2.4",
+		"react": "^18.2.0",
+		"react-copy-to-clipboard": "^5.0.3",
+		"react-datetime": "^3.0.4",
+		"react-dom": "^18.2.0",
+		"react-github-btn": "^1.2.0",
+		"react-live": "^2.2.3",
+		"react-transition-group": "^4.4.1",
+		"sass": "^1.60.0",
+		"simplebar-react": "^2.3.0"
+	},
+	"scripts": {
+		"dev": "next dev",
+		"start": "next start",
+		"build": "next build",
+		"build-local": "PUBLIC_URL=./ next build",
+		"test": "next test",
+		"eject": "next eject",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"typescript": "5.0.3"
+	}
+}

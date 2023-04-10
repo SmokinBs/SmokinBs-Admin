@@ -1,0 +1,14 @@
+{
+	"name": "Smokin Bs BBQ Admin",
+	"short_name": "Admin dashboard use only.",
+	"icons": [
+		{
+			"src": "/favicon.ico",
+			"type": "image/png"
+		}
+	],
+	"start_url": "/",
+	"theme_color": "#4A5073",
+	"background_color": "#fff",
+	"display": "standalone"
+}
