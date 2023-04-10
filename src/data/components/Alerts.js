@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBullhorn } from "@fortawesome/free-solid-svg-icons";
 import { Col, Row, Alert, Button, Container } from "@themesberg/react-bootstrap";
 
-import Documentation from "./Documentation";
+import Documentation from "../../pages/components/Documentation";
 
 export default () => {
 	return (

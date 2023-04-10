@@ -4,7 +4,7 @@ import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { Col, Row, Form, Card, Button, Container, InputGroup } from "@themesberg/react-bootstrap";
 import { Link } from "next/link";
 
-import { Routes } from "../../routes";
+import Routes from "../../../data/routes";
 
 export default () => {
 	return (

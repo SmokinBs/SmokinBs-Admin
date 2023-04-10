@@ -5,7 +5,7 @@ import { faFacebookF, faGithub, faTwitter } from "@fortawesome/free-brands-svg-i
 import { Col, Row, Form, Card, Button, FormCheck, Container, InputGroup } from "@themesberg/react-bootstrap";
 import { Link } from "next/link";
 
-import { Routes } from "../../routes";
+import Routes from "../../../data/routes";
 import BgImage from "../../assets/img/illustrations/signin.svg";
 
 export default () => {

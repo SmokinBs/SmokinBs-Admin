@@ -5,7 +5,7 @@ import { Col, Row, Form, Card, Button, Container, InputGroup } from "@themesberg
 import { Link } from "next/link";
 import Image from "next/image";
 
-import { Routes } from "../../routes";
+import Routes from "../../../data/routes";
 import BgImage from "../../assets/img/illustrations/signin.svg";
 import Profile3 from "../../assets/img/team/profile-picture-3.jpg";
 

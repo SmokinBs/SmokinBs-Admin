@@ -4,7 +4,7 @@ import { faAngleLeft, faEnvelope, faUnlockAlt } from "@fortawesome/free-solid-sv
 import { Col, Row, Form, Card, Button, Container, InputGroup } from "@themesberg/react-bootstrap";
 import { Link } from "next/link";
 
-import { Routes } from "../../routes";
+import Routes from "../../../data/routes";
 
 export default () => {
 	return (

@@ -6,7 +6,7 @@ import { Row, Col, Nav, Form, Navbar, Dropdown, Container, ListGroup, InputGroup
 import Image from "next/image";
 
 import NOTIFICATIONS_DATA from "../../data/notifications";
-import Profile3 from "../assets/img/team/profile-picture-3.jpg";
+import Profile3 from "../../pages/assets/img/team/profile-picture-3.jpg";
 
 export default (props) => {
 	const [notifications, setNotifications] = useState(NOTIFICATIONS_DATA);

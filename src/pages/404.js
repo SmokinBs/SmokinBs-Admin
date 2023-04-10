@@ -6,7 +6,7 @@ import Image from "next/image";
 
 import { Link } from "next/link";
 
-import { Routes } from "./routes";
+import Routes from "../data/routes";
 import NotFoundImage from "./assets/img/illustrations/404.svg";
 
 export default () => {

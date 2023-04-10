@@ -1,4 +1,4 @@
-export const Routes = {
+export default {
 	// pages
 	MainSite: { path: "https://www.smokinbsbbq.tk" },
 	Dashboard: { path: "/" },

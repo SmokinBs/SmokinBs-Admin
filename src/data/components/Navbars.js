@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Nav, Row, Col, Card, Image, Navbar, Container } from "@themesberg/react-bootstrap";
 
 import Documentation from "./Documentation";
-import ReactLogoPrimary from "../../pages/assets/img/technologies/react-logo-primary.svg";
-import ReactLogoTransparent from "../../pages/assets/img/technologies/react-logo-transparent.svg";
+import ReactLogoPrimary from "../../pages/assets/img/brand/react-hero-logo.svg";
+import ReactLogoTransparent from "../../pages/assets/img/brand/react-hero-logo.svg";
 
 export default () => {
 	return (

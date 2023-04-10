@@ -5,7 +5,7 @@ import { Col, Row, Button, Container } from "@themesberg/react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
 
-import { Routes } from "./routes";
+import Routes from "../data/routes";
 import ErrorImage from "./assets/img/illustrations/500.svg";
 
 export default () => {

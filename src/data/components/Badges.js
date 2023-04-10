@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row, Badge, Button, Container } from "@themesberg/react-bootstrap";
 
-import Documentation from "./Documentation";
+import Documentation from "../../pages/components/Documentation";
 
 export default () => (
 	<article>

@@ -8,7 +8,7 @@ import { faCog, faSignOutAlt, faTable, faTimes, faLockOpen, faLock, faHome, faTa
 import { Nav, Badge, Button, Dropdown, Accordion, Navbar } from "@themesberg/react-bootstrap";
 
 import Image from "next/image";
-import { Routes } from "../routes";
+import Routes from "../../data/routes";
 import Logo from "../assets/img/icons/logo.svg";
 import { faDashcube, faGoogle } from "@fortawesome/free-brands-svg-icons";
 

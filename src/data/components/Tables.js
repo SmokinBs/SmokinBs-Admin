@@ -5,10 +5,10 @@ import { Col, Row, Nav, Card, Button, Table, Dropdown, ProgressBar, Pagination, 
 import { Link } from "next/link";
 import Image from "next/image";
 
-import { Routes } from "../routes";
-import { pageVisits, pageTraffic, pageRanking } from "../../data/tables";
-import transactions from "../../data/transactions";
-import commands from "../../data/commands";
+import Routes from "../routes";
+import { pageVisits, pageTraffic, pageRanking } from "../tables";
+import transactions from "../transactions";
+import commands from "../commands";
 
 const ValueChange = ({ value, suffix }) => {
 	const valueIcon = value < 0 ? faAngleDown : faAngleUp;
@@ -353,3 +353,5 @@ export const TransactionsTable = () => {
 // 		</Card>
 // 	);
 // };
+
+export default TransactionsTable;

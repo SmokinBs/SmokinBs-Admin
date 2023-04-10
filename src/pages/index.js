@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell, faBowlFood, faCartShopping, faCashRegister, faChartLine, faCloudUploadAlt, faDollar, faPlus, faRocket, faTag, faTasks, faUserShield } from "@fortawesome/free-solid-svg-icons";
 import { Col, Row, Button, Dropdown, ButtonGroup } from "@themesberg/react-bootstrap";
 import Link from "next/link";
-import { Routes } from "./routes";
+import Routes from "../data/routes";
 
 // import { CounterWidget, CircleChartWidget, BarChartWidget, TeamMembersWidget, ProgressTrackWidget, RankingWidget, SalesValueWidget, SalesValueWidgetPhone, AcquisitionWidget } from "../components/Widgets";
 // import { PageVisitsTable } from "../component-examples/Tables";
